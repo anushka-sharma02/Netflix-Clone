@@ -1,0 +1,224 @@
+@media screen and (max-width: 480px) {
+  .hero-container{
+    width:100vw;
+    height:70vh;
+    overflow:hidden;
+  }
+  .hero-container nav {
+      padding: 0 1rem;
+      height: 10vh;
+    }
+  
+    .hero-container nav .logo {
+      height: 2rem;
+      width: 7rem;
+    }
+  
+    .nav-right {
+      gap: 0.3rem;
+    }
+  
+    .lang-select {
+      width: 6rem;
+    }
+  
+    .lang-select select {
+      width: 6rem;
+      font-size: 0.8rem;
+    }
+  
+    main h1 {
+      font-size: 2rem;
+      width: 100%;
+      text-align: center;
+    }
+  
+    main h2 {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    main p {
+      font-size: 0.9rem;
+      text-align: center;
+      margin: 1rem 0;
+    }
+  
+    .inputs-container {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .inputs-container input {
+      width:80vw;
+    }
+  
+    .inputs-container button {
+      font-size:large;
+      width: 45vw;
+    }
+    .trending-content {
+      margin: 2rem 1rem;
+    }
+  
+    .selection-containers {
+      flex-wrap: wrap;
+    }
+    .cards {
+      height: fit-content;
+      gap: 2rem;
+      display: flex;
+    }
+  
+    .card-container {
+      width: 130px;
+      height: 200px;
+    }
+  
+    .card-container img {
+      width: 110px;
+      height: 180px;
+    }
+    .card-button{
+      right:-30px;
+      top:40px;
+    }
+  .reasons-section{
+    height:fit-content;
+    overflow: hidden;
+  }
+    .reason-cards {
+      gap: 1rem;
+      display: block;
+      row-gap: 2rem;
+    }
+  
+    .reason {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      height: 300px;
+    }
+  
+    .faq-content {
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .faq-content p {
+      font-size: 1.2rem;
+    }
+    .input-section p{
+      justify-content: center;
+    }
+    .input-section{
+      margin-bottom:3rem;
+    }
+    #email{
+      width: 80vw;
+    }
+    .links ul{
+      width: 43%;
+      
+    }
+    .links ul li a{
+      font-size: 10px;
+    }
+    .links {
+      width: 100%;
+      margin: 0;
+      padding: 1rem;
+      row-gap: 3rem;
+    }
+  
+    #bottom-lang {
+      margin: 2rem 1rem;
+    }
+  
+    .footer-section span p {
+      margin-left: 1rem;
+    }
+  }
+  
+  /* Tablets (481px - 768px) */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .hero-container nav {
+      padding: 0 2rem;
+    }
+  
+    main h1 {
+      font-size: 2.5rem;
+      width: 100%;
+    }
+  main p{
+    margin-top: 3rem;
+    text-align: center;
+    
+  }
+  .inputs-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .inputs-container input {
+      width:80vw;
+    }
+  
+    .inputs-container button {
+      font-size:large;
+      width: 32vw;
+    }
+  
+    .trending-content{
+      margin: 2rem;
+    }
+    .reason-cards {
+      gap: 1.5rem;
+      display: flex;
+      flex-wrap:wrap;
+      overflow: visible;
+    }
+    .reason{
+      width: 45%;
+      height: 300px;
+    }
+     #email{
+      width: 80vw;
+    }
+    .links {
+      width: 90%;
+     
+    }
+    .links ul li a{
+      font-size: 10px;
+    }
+    .links-section{
+      margin-top: 4rem;
+    }
+  }
+  
+  /* Laptops and Small Screens (769px - 1024px) */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero-container nav {
+      padding: 0 4rem;
+    }
+  
+    main h1 {
+      width: 100%;
+    }
+    .reason{
+      height:380px;
+    }
+  }
+  
+  /* Large Screens (1025px - 1200px) */
+  @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .hero-container nav {
+      padding: 0 6rem;
+    }
+  
+    .trending-content{
+      margin: 3rem 6rem;
+    }
+
+  }

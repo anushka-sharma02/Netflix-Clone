@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Netflix Sans","Helvetica Neue",
+    "Segoe UI",
+    "Roboto",
+    "Ubuntu",
+    "sans-serif";
+    
+}
+body{
+    background-color: black;
+    width: 100vw;
+}
+.hero-container{
+    height:100vh;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/2f5a878d-bbce-451b-836a-398227a34fbf/web/IN-en-20241230-TRIFECTA-perspective_5ab944a5-1a71-4f6d-b341-8699d0491edd_large.jpg");
+    background-size:cover;
+    background-position: center center;
+    position:relative;
+}
+.hero-container .black-box{
+    height:100vh;
+    width:100%;
+    background-color: black;
+    opacity:0.7;
+    position:absolute;
+    top: 0;
+    left:0;
+}
+.hero-container nav{
+    height:13vh;
+    width:100%;
+    position:relative;
+    z-index:10;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 10rem;
+    background:linear-gradient(black,transparent);
+}
+.hero-container nav .logo{
+    height:2.5rem;
+    width:9.25rem;    
+}
+.hero-container .nav-right{
+    display:flex;
+    gap:0.7rem;
+    align-items:baseline;
+    flex-wrap: wrap;
+}
+.lang-select{
+    height:2.2rem;
+    width:8rem;
+    position:relative;
+}
+.lang-select svg{
+    color:white;
+    position:absolute;
+    left:10px;
+    top:7px;
+    pointer-events:none;
+}
+.lang-select i{
+    color:white;
+    position:absolute;
+    right:20px;
+    top:10px;
+    pointer-events: none;
+    font-size:10px;
+}
+.lang-select select{
+    background:transparent;
+    color:rgb(255,255,255);
+    font-size:0.9rem;
+    font-weight:500;
+    padding:0 29px;
+    height:2rem;
+    width:8rem;
+    text-align:center;
+    border:1px solid grey;
+    border-radius:4px;
+    appearance: none;
+}
+
+
+.lang-select select:focus{
+    outline:2px solid #ffffff;
+    outline-offset:2px;
+}
+.lang-select select option{
+    color:black;
+    text-align:left;
+}
+.btn{
+    padding:5px;
+    background-color: red;
+    color:white;
+    border-radius:5px;
+    font-size:12px;
+    font-weight:500;
+    border:none;
+    width:4.5rem;
+    height:2rem;
+    transition:all ease 0.2s;
+}
+.btn:hover{
+    box-shadow:0 0 60px #00000033 inset;
+    cursor:pointer;
+}
+main{
+    height:calc(100% - 15vh);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    position:relative;
+    z-index:10;
+    padding:0 2rem;
+}
+main h1{
+    color:white;
+    font-size:3.5rem;
+    font-weight:900;
+    text-align: center;
+    width:35rem;
+    margin-bottom:1rem;
+}
+main h2{
+    color:white;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:2rem;
+}
+main h2 .material-symbols-outlined{
+    color:white;
+    text-align:center;
+}
+main p{
+    color:white;
+    font-weight:500;
+    font-size:17px;
+    margin-bottom:1rem;
+}
+.inputs-container{
+    display:flex;
+    align-items:end;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+.inputs-container input{
+    width:24rem;
+    height:3.5rem;
+    border:1px solid rgba(128, 128, 128, 0.733);
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color:white;
+    padding-left:1rem;
+}
+.inputs-container input:focus{
+    outline:2px solid #ffffff;
+    outline-offset:2px;
+}
+.inputs-container ::-webkit-input-placeholder{
+    font-weight:700;
+    font-size:16px;
+    color:rgb(160, 159, 159);
+}
+.inputs-container ::-webkit-input-placeholder:focus{
+    text-align:start;
+}
+.inputs-container button{
+     width:14rem;
+     height:3.5rem;
+     color:white;
+     font-weight:700;
+     font-size:20px;
+     background-color: rgba(255, 0, 0, 0.829);
+     border:none;
+     border-radius: 4px;
+     padding:0 1rem;
+     transition:all ease 0.3s;
+}
+.inputs-container button:hover{
+    box-shadow:0 0 60px #0000003a inset;
+    cursor:pointer;
+}
+.top-trending{
+    background-color: black;
+    border-top-width: 80%;
+    border-top:2px solid;
+    border-top-color: red;
+    justify-items: center;
+}
+.trending-content{
+    height:100%;
+    width:80%;
+    margin-top:3rem ;
+    margin-bottom: 3rem;
+
+}
+.top-trending h1{
+    color:white;
+    font-weight:700;
+    margin-bottom:1rem;
+    padding-left: 2rem;
+}
+.selection-containers{
+    display: flex;
+    gap:1.5rem;
+    margin-bottom:2.5rem;
+    padding-left: 2rem;
+
+}
+.selection-containers .select-1{
+    width:6rem;
+    height:2rem;
+    position:relative;
+}
+.selection-containers .select-1 select{
+    background-color:transparent;
+    color:rgb(255,255,255);
+    font-size:1rem;
+    font-weight:500;
+    padding:4px 12px;
+    height:2.5rem;
+    width:6rem;
+    border:1px solid grey;
+    border-radius:4px;
+    appearance: none;
+    
+}
+.selection-containers select:focus{
+    outline:2px solid #ffffff;
+    outline-offset:2px;
+}.selection-containers s43elect option{
+    color:black;
+    text-align:left;
+}
+.selection-containers .select-2{
+    width:7rem;
+    height:2rem;
+    position:relative;
+}
+.selection-containers .select-2 select{
+    background:transparent;
+    color:rgb(255,255,255);
+    font-size:1rem;
+    font-weight:500;
+    padding:4px 12px;
+    height:2.5rem;
+    width:7rem;
+    border:1px solid grey;
+    border-radius:4px;
+    appearance: none;
+}
+.selection-containers i{
+    position:absolute;
+    right:20px;
+    top:15px;
+    pointer-events: none;
+    font-size:10px;
+    color:white;
+}
+.selection-containers select option{
+    color:black;
+}
+.cards-section{
+    position:relative;
+}
+.cards{
+    padding-left:2rem;
+    display:flex;
+    gap:3rem;
+    overflow-x:scroll;
+    height:360px;
+}
+.cards::-webkit-scrollbar{
+    appearance:none;
+}
+.card-container{
+    width:200px;
+    height:280px;
+    position:relative;
+}
+.card-container img{
+          border-radius:7px;
+          width:180px;
+          height:270px;
+          margin:0.5rem 0;
+}
+.card-container:hover img{
+      transition: all ease 0.2s;
+      transform:scale(1.05);
+      cursor:pointer;
+}
+.card-button{
+    position:absolute;
+    right:-40px;
+    top:70px;
+}
+.card-button button{
+    height:8rem;
+    background-color: rgb(37, 37, 37);
+    border:none;
+    border-radius: 10px;
+}
+.card-button button svg{
+    color:white;
+}
+.card-button button:hover{
+       background-color: rgb(71, 71, 71);
+       cursor:pointer;
+}
+.card-container span{
+    font-size:7rem;
+    font-weight:900;
+    color:black;
+    text-shadow:2px 2px 2px 3px grey inset;
+    position:absolute;
+    bottom:0;
+    left: -20px;
+    z-index:10;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 2px;
+}
+section{
+    width: 100%;
+    max-width: 100%;
+}
+.reasons-section{
+    height:fit-content;
+    width: 100%;
+    justify-items: center;
+    padding-bottom: 5rem;
+
+}
+.reasons-section h2{
+        font-size:26px;
+        font-weight:500;
+        color:white;
+        max-width: 100%;
+        width: 100%;
+        padding-bottom: 2rem;
+        padding-left: 10%;
+}
+.reason-cards{
+    display:flex;
+    height:22rem; 
+    width: 80%;
+    gap:1rem;
+    margin: 0;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.reason{
+    width:17rem;
+    height:20rem;
+    border-radius:10px;
+    position:relative;
+    background:linear-gradient(to left bottom,#192144,#1b1d3b,#1c1931,#1d172d,#1e1426,#1f1324,#1f1323,#1f111e,#21101c,#210f19,#210e17);
+}
+.reason h1{
+    color:white;
+    font-weight:500;
+    margin:1rem;
+}
+.reason p{
+    color:#aaabb7;
+    margin:1rem;
+}
+.reason svg{
+    position:absolute;
+    right:1rem;
+    bottom:1rem;
+}
+.faq-section{
+    height:fit-content;
+}
+.faq-section h1{
+    color:white;
+    font-size:25px;
+    font-weight:500;
+    margin-bottom:1rem;
+    margin-left: 10%;
+}
+.faq{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:0.5rem;
+}
+.faq-content{
+    height:5rem;
+    width:80%;
+    background-color: #2d2d2d;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2rem;
+}
+.faq-content p{
+    color:white;
+    font-size:24px;
+    font-weight: 400;
+}
+.faq-content svg{
+    color:white;
+}
+.faq-content:hover{
+    cursor:pointer;
+    background-color: #444444;
+}
+.footer-section{
+    height:fit-content;
+    width: 80%;
+    padding: 5rem 0;
+
+}
+.input-section{
+    height:20vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:0.5rem;
+    margin-bottom:2rem;
+}
+.input-section p{
+    color:white;
+    font-weight:400;
+    font-size:17px;
+    margin-bottom:1rem;
+}
+#email{
+    width:35rem;
+}
+.query p{
+    color:#6e6e6e;
+    font:16px;
+    font-weight:600;
+}
+.query p a{
+    color:#6e6e6e;
+    font:16px;
+    font-weight:600;
+}
+.query p a:hover{
+    cursor:pointer;
+}
+.links{
+    height:fit-content;
+   
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+    margin-top: 1rem;
+}
+.links ul{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:1rem;
+    height:20vh;
+    padding:0;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    color:#aaaaaa;
+    font-size:14px;
+}
+.links ul li a:hover{
+    cursor:pointer;
+}
+#bottom-lang{
+    margin:2rem 0;
+}
+footer{
+    justify-items:center;
+}
+.footer-section span p{
+    color:#aaaaaa;
+    font-size:14px;
+    font-weight:500;
+}
+@media screen and (max-width:1300px){
+    .hero-container nav{
+    padding:0 2rem;
+    }
+}
+/* Prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+}
+
+/* Ensure all sections fit the viewport */
+.hero-container, .top-trending, .faq-section, footer {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+/* Ensure child elements do not overflow */
+.hero-container nav{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+ .reason-cards {
+    width: 80%;
+    max-width: 100%;
+    overflow-x: hidden;
+    height: fit-content;
+}
+
+/* Horizontal scrolling for cards (optional) */
+.cards {
+    max-width: 100;
+    overflow-x: auto;
+    display: flex;
+    gap: 1rem;
+    width:100%;
+}
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+/* Adjust padding and margins for smaller screens */
+@media (max-width: 768px) {
+    .hero-container h1, .hero-container h2 {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
